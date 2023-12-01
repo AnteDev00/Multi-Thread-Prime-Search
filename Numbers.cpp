@@ -86,9 +86,7 @@ void Numbers::ArePrime()
 		if (num.unique_factors > 0)
 		{
 			num.primeness = "Not-prime";
-			num.compositeness =
-				1 - (1 / (static_cast<long double>(num.unique_factors))) * 100;
-		}
+			num.compositeness = static_cast<double>(num.unique_factors) / num.value;		}
 	}
 	
 }
