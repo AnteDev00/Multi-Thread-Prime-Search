@@ -1,6 +1,17 @@
 # Prime-and-Threads
-Ovo je jedan od mojih projekta koje sam radio iz znatiželje.
-Radi se o algoritmu koji pretražuje brojeve i ispituje je li svaki od njih prost ili ne. Tu informaciju ispisuje na konzoli uz to koliko faktora ima, te "kompozitnost" tog broja.
-Pošto je ovaj proces moguće paralelizirati, odlučio sam implementirati to pazeći na sinkronizaciju, ravnomjernu raspodjelu posla među "nitima" (threads) i druge stvari.
-Uz to su dodane sitnice poput mjerenja vremena i druge stvari.
-Programiralo se paradigmom Objektno orijentiranog programiranja.
+
+Projekt implementira algoritam za pretraživanje brojeva i provjeru njihove prostosti. Informacije o prostosti i faktorima ispisuju se na konzoli, zajedno s oznakom "kompozitnosti" broja.
+
+Implementacija omogućuje paralelizaciju procesa uz posebnu pažnju posvećenu sinkronizaciji i ravnomjernoj raspodjeli posla među "nitima" (threads). Dodatno su uključene funkcionalnosti poput mjerenja vremena i drugih detalja.
+
+Projekt je programiran prema paradigmama objektno orijentiranog programiranja (OOP).
+
+---
+
+## Značajke projekta:
+
+- Algoritam za pretragu prostih brojeva
+- Paralelizacija procesa s naglaskom na sinkronizaciju i ravnomjernu raspodjelu posla među nitima
+- Ispis informacija o prostosti, faktorima i "kompozitnosti" na konzoli
+- Dodatne funkcionalnosti, uključujući mjerenje vremena
+- Implementacija prema paradigmama objektno orijentiranog programiranja (OOP)
