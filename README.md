@@ -18,4 +18,17 @@ Projekt je programiran prema paradigmama objektno orijentiranog programiranja (O
 
 ## Screenshot:
 
-![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/54c086e0-f27d-490d-98d5-3b85b7b6ca8b)
+Begining:
+
+![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/d31f1300-1367-40d4-858d-cc4afd99e2a3)
+
+
+
+Calcluation:
+
+![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/8e21a313-873d-4403-a845-946b026f8b99)
+
+
+Ending:
+
+![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/89fa93f0-2d8f-4cc0-babe-7475682e0a6c)
