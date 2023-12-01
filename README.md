@@ -15,3 +15,7 @@ Projekt je programiran prema paradigmama objektno orijentiranog programiranja (O
 - Ispis informacija o prostosti, faktorima i "kompozitnosti" na konzoli
 - Dodatne funkcionalnosti, uključujući mjerenje vremena
 - Implementacija prema paradigmama objektno orijentiranog programiranja (OOP)
+
+## Screenshot:
+
+![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/54c086e0-f27d-490d-98d5-3b85b7b6ca8b)
