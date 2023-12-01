@@ -41,12 +41,7 @@ void Numbers::ArePrime()
 		(
 			[this, t, num_threads, &mtx]
 			{
-				//int start = t * chunk_size; // which index thread starts 
-				//int end;
-				//if (t == num_threads - 1)
-				//	end = size;
-				//else 
-				//	end = (t + 1) * chunk_size;
+
 				auto startTime = chrono::high_resolution_clock::now();
 
 				mtx.lock();
@@ -79,7 +74,7 @@ void Numbers::ArePrime()
 	}
 
 
-	// deciding if Prime & Percetage calc
+	// deciding if Prime & Calculating Compositeness
 	for (int i = 0; i < size; i++)
 	{
 		Number& num = numVector[i];
@@ -93,7 +88,7 @@ void Numbers::ArePrime()
 }
 
 
-// dont use because (printing in paralel = BIG NO NO.)
+// dont use because printing in paralel is not smart
 void Numbers::PrintNumbers()
 {
 	cout << "\nSlepp 5000 miliseconds for testing purposes";
@@ -163,71 +158,4 @@ void Numbers::FillVector(int digits)
 		numVector.emplace_back(((i%(digits+size))+1));
 	}
 }
-
-
-// if i mess up ArePrime()
-
-/*
-void Numbers::ArePrime()
-{
-	int num_threads = thread::hardware_concurrency() - 2; // = 10 threads
-	int chunk_size;
-	// Number of Threads  ~ to size of Vector (add few threads)
-	if (size < num_threads) num_threads = size;
-	if (size % num_threads > 0)
-	{
-		for (int i = 0; size % num_threads > 0; i++)
-		{
-			num_threads++;
-		}
-	}
-	// for even workload - we split into equal parts
-	chunk_size = size / num_threads;
-
-	vector<thread> threads(num_threads);
-	//Creating Threads and Filling them up with (lambda) Functions
-	for (int t = 0; t < num_threads; ++t)
-	{
-		// threads[t] = thread(lambda_funct)  //constructor with fnc in it
-		threads[t] = thread
-		(
-			[this, t, chunk_size, num_threads]
-			{
-				int start = t * chunk_size; // which index thread starts
-				int end = (t + 1) * chunk_size;
-
-				for (int i = start ; i < end; i++)
-				{
-					Number& num = numVector[i];
-					for (int fac = 2; fac < num.value; fac++)
-					{
-						if (num.value % fac == 0) num.unique_factors++;
-					}
-				}
-			}
-		);
-	}
-	// syncing all threads
-	for (int i = 0; i < num_threads; i++) {
-		threads[i].join();
-	}
-
-	// deciding if Prime & Percetage calc
-	for (int i = 0; i < size; i++)
-	{
-		Number& num = numVector[i];
-		if (num.unique_factors > 0)
-		{
-			num.primeness = "Not-prime";
-			num.compositeness =
-				(static_cast<long double>(num.value - num.unique_factors))
-				/ (static_cast<long double>(num.value)) * 100.0L;
-		}
-	}
-}
-
-*/
-
-
-
 
