@@ -1,4 +1,4 @@
-﻿#include "Numbers.h"
+#include "Numbers.h"
 
 #include <iostream>
 #include <vector>
@@ -83,10 +83,11 @@ void Numbers::ArePrime()
 	for (int i = 0; i < size; i++)
 	{
 		Number& num = numVector[i];
-		if (num.unique_factors > 0)
-		{
+		num.compositeness = static_cast<double>(num.unique_factors) / num.value;
+		if (num.unique_factors > 2)
 			num.primeness = "Not-prime";
-			num.compositeness = static_cast<double>(num.unique_factors) / num.value;		}
+		else num.primeness = "Prime    ";
+
 	}
 	
 }
@@ -111,8 +112,8 @@ void Numbers::PrintNumbers()
 				{
 					Number& num = numVector[i];				
 					cout << "\n[Thread" << t << "]" << " Number " << num.value << "  is    " << num.primeness
-						 << "    It has    " << num.unique_factors << "    unique factors (and its   compositeness is "
-						 << num.compositeness << " % ) \n";
+						 << "    It has    " << num.unique_factors << "    unique factors. Its' compositeness is "
+						 << num.compositeness << " %\n";
 				}
 			}
 		);
@@ -133,8 +134,8 @@ void Numbers::PrintNumbers(int everyX)
 	{
 		Number& num = numVector[i];
 		cout << "\nNumber  " << num.value << "  is    " << num.primeness 
-			 << "    It has    " << num.unique_factors << "  unique factors  (its   compositeness is   " 
-			 << std::fixed << std::setprecision(2) << num.compositeness << "%)\n";
+			 << "    It has    " << num.unique_factors << "  unique factors. Its' compositeness is    " 
+			 << std::fixed << std::setprecision(static_cast<int>(std::log10(i+1)) + 1) << num.compositeness*100 << "%\n";
 	}
 }
 
@@ -226,5 +227,7 @@ void Numbers::ArePrime()
 }
 
 */
+
+
 
 
