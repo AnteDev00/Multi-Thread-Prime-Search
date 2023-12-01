@@ -7,12 +7,12 @@ class Number
 {
 public:
 	uint64_t value;
-	uint64_t unique_factors = 0;
-	long double compositeness = 0.00;
-	string primeness = "Prime    ";
+	uint64_t unique_factors = 2; // excluding 1 and itself
+	long double compositeness;
+	string primeness;
 public:
 	Number();
-	Number(uint64_t _value): value(_value) {}
+	Number(uint64_t _value): value(_value), compositeness(2/value) {}
 };
 
 class Numbers
