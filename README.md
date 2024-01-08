@@ -18,12 +18,13 @@ It employs parallelization with careful synchronization and equal work distribut
 
 Beginning:
 
-![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/d31f1300-1367-40d4-858d-cc4afd99e2a3)
+![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/9cc22220-ad95-411f-a6ab-ec785b5ac58e)
 
 Calculation:
 
-![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/8e21a313-873d-4403-a845-946b026f8b99)
+![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/13244db9-7ccb-4390-83d4-784a56df5734)
 
 Ending:
 
-![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/89fa93f0-2d8f-4cc0-babe-7475682e0a6c)
+![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/bc12edd1-4850-4e4b-9913-a905e6ac2202)
+
