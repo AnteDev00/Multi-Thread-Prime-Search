@@ -1,33 +1,30 @@
 # Prime-and-Threads
 
-Projekt implementira algoritam za pretraživanje brojeva i provjeru njihove prostosti. Informacije o prostosti i faktorima ispisuju se na konzoli, zajedno s oznakom "kompozitnosti" broja.
+The project implements an algorithm for searching numbers and checking their primality. Information about primality and factors is printed on the console, along with a label indicating the "compositeness" of the number.
 
-Implementacija omogućuje paralelizaciju procesa uz posebnu pažnju posvećenu sinkronizaciji i ravnomjernoj raspodjeli posla među "nitima" (threads). Dodatno su uključene funkcionalnosti poput mjerenja vremena i drugih detalja.
+The implementation allows parallelization of the process with special attention to synchronization and even distribution of work among "threads." Additional functionalities, such as time measurement and other details, are included.
 
-Projekt je programiran prema paradigmama objektno orijentiranog programiranja (OOP).
+The project is programmed according to the principles of object-oriented programming (OOP).
 
 ---
 
-## Značajke projekta:
+## Project Features:
 
-- Algoritam za pretragu prostih brojeva
-- Paralelizacija procesa s naglaskom na sinkronizaciju i ravnomjernu raspodjelu posla među nitima
-- Ispis informacija o prostosti, faktorima i "kompozitnosti" na konzoli
-- Dodatne funkcionalnosti, uključujući mjerenje vremena
-- Implementacija prema paradigmama objektno orijentiranog programiranja (OOP)
+- Algorithm for searching prime numbers
+- Parallelization of the process with emphasis on synchronization and even distribution of work among threads
+- Printing information about primality, factors, and "compositeness" on the console
+- Additional functionalities, including time measurement
+- Implementation according to the principles of object-oriented programming (OOP)
 
 ## Screenshot:
 
-Begining:
+Beginning:
 
 ![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/d31f1300-1367-40d4-858d-cc4afd99e2a3)
 
-
-
-Calcluation:
+Calculation:
 
 ![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/8e21a313-873d-4403-a845-946b026f8b99)
-
 
 Ending:
 
