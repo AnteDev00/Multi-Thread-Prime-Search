@@ -1,4 +1,4 @@
-# Prime-and-Threads
+# Prime-and-Multi-Threads
 
 The project features an algorithm to search and verify the primality of numbers, displaying relevant information on the console, including a label for "compositeness." 
 
