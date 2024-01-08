@@ -20,11 +20,11 @@ Beginning:
 
 ![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/9cc22220-ad95-411f-a6ab-ec785b5ac58e)
 
-Calculation:
+Calculating:
 
 ![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/13244db9-7ccb-4390-83d4-784a56df5734)
 
-Ending:
+Displaying:
 
 ![image](https://github.com/AnteDev00/Multi-Thread-Prime-Search/assets/151842550/bc12edd1-4850-4e4b-9913-a905e6ac2202)
 
