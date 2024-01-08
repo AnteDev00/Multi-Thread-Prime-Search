@@ -1,10 +1,8 @@
 # Prime-and-Threads
 
-The project implements an algorithm for searching numbers and checking their primality. Information about primality and factors is printed on the console, along with a label indicating the "compositeness" of the number.
+The project features an algorithm to search and verify the primality of numbers, displaying relevant information on the console, including a label for "compositeness." 
 
-The implementation allows parallelization of the process with special attention to synchronization and even distribution of work among "threads." Additional functionalities, such as time measurement and other details, are included.
-
-The project is programmed according to the principles of object-oriented programming (OOP).
+It employs parallelization with careful synchronization and equal work distribution among threads. Additional functionalities, like time measurement, are incorporated, and the project follows object-oriented programming (OOP) principles.
 
 ---
 
